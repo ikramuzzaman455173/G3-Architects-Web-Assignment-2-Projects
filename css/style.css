@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  font-family: var(--font-p);
+  font-family: var(--font-workSans);
   transition: .3s linear;
 
 }
@@ -21,14 +21,14 @@ ul, li {
 /* *<===Same Styles===>* */
 
 :root {
-  --light-dark: #3A3A3A;
-  --btn-primary: #E02C6D;
-  --title-dark: #18191F;
-  --text-light: #787885;
-  --text-dark: #0A0826;
+  --light-dark: #424242;
+  --btn-primary: #FF900E;
+  --title-dark: #131313;
+  --text-light: #727272;
+  --text-dark: #131313;
   --white: #FFFFFF;
   --h1: 3rem;
-  --font-p: 'Poppins', sans-serif;
+  --font-workSans: 'Work Sans', sans-serif;
   /*heading1 font size */
 
   --h3: 2.5rem;
@@ -37,7 +37,7 @@ ul, li {
   --h4: 2rem;
   /*heading4 font size */
 
-  --p: 1.7rem;
+  --p: 1.5rem;
   /*paragrapgh font size */
 
   --a: 1.5rem;
@@ -51,12 +51,12 @@ ul, li {
 
 .h1 {
   font-size: var(--h1);
-  color: var(--light-dark);
+  color: var(--title-dark);
 }
 
 .h3 {
   font-size: var(--h3);
-  color: var(--black);
+  color: var(--text-dark);
 }
 
 .h4 {
@@ -74,20 +74,41 @@ ul, li {
   background: var(--btn-primary);
   color: var(--white);
 }
-
+.span{
+  color:var(--btn-primary);
+}
+.span1{
+  color:var(--text-dark);
+}
 .wrapper {
   background: var(--white);
-  color: var(--light-dark);
+  color: var(--text-dark);
   width: 100%;
   min-height: 100vh;
 }
+
+section {
+  max-width: 1150px;
+  width: 100%;
+  margin: 7rem auto;
+}
+
+.btn {
+  padding: .7rem 2rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+
+}
+
 
 /* *<===Same Styles End===>* */
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 /* html::-webkit-scrollbar {
@@ -114,33 +135,126 @@ img {
   height: 100%;
 }
 
-.container {
-  max-width: 1150px;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
+.container {}
 
 
 /* *<===main style starts===>* */
-h1{
-  font-size:5rem;
-  color:tomato;
+
+
+/* *<===header section styles===>* */
+.header {
+  width: 100%;
+  padding-top: 3rem;
+  background: #FFF4E7;
+  height: 950px;
 }
 
+.header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  max-width: 1150px;
+  margin: 0 auto;
+}
 
+.header .nav .logo {
+  font-weight: 600;
+}
 
+.header .nav .nav-link {
+  /* border: 1px solid #000; */
+  padding: .5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 4vh;
+}
 
+.header .nav .nav-link li a {
+  font-size: 1.5rem;
+  color: var(--light-dark);
+  font-weight: 400;
+  letter-spacing: .5px;
+}
 
+.header .nav .nav-link li a:hover {
+  color: var(--btn-primary);
+}
 
+.header .header-details {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
 
+.header .header-details .info-part {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
 
+.header .header-details .info-part .h1 {
+  width: 450px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
+.header .header-details .info-part .p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
 
+/* .header .header-details .info-part a {}
 
+.header .header-details .info-part a:hover {
+  opacity: 0.7;
+} */
 
+.header .header-details .header-banner {
+  width: 100%;
+  max-width: 1050px;
+  border: .7rem solid var(--white);
+  border-radius: 5px;
 
+}
+
+/* *<===our feature section styles===>* */
+.our-feature {
+  padding: 1.5rem;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.our-feature .feature-image {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 4vh;
+}
+
+.our-feature .feature-image img {
+  width: 324px;
+  height: 324;
+  border: 1rem solid var(--white);
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.our-feature .feature-info{
+  padding:1rem 2rem;
+}
+.our-feature .feature-info .h3{
+  color:var(--text-light);
+  margin-bottom:1.5rem;
+}
+.our-feature .feature-info .p{
+  margin-bottom:2.5rem;
+}
 
 
 

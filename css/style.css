@@ -320,7 +320,7 @@ img {
   justify-content: center;
   font-weight: 700;
   letter-spacing: 1px;
-  transform: translate(200%,30px);
+  transform: translate(200%, 30px);
   cursor: pointer;
 }
 
@@ -340,9 +340,64 @@ img {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+/* *<===comment===>* */
+.achievement {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievement .h3 {
+  margin-bottom: 1.5rem;
+}
+
+.achievement #p {
+  margin: 1rem 0 2rem 0;
+  width: 500px;
+}
+
+.achievement .some-fects {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  gap: 50px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.achievement .some-fects .fact {
+  border-radius: 5px;
+  padding: 1rem;
+  border: .1rem solid var(--btn-primary);
+
+}
+
+.achievement .some-fects .fact1:hover{
+  transform:translateY(-20px);
+}
+.achievement .some-fects .fact2:hover{
+  transform:scale(1.2);
+}
+.achievement .some-fects .fact3:hover{
+  transform:translateY(30px);
+}
+.achievement .some-fects .fact4:hover{
+  transform:scale(.75);
+}
+.achievement .some-fects .fact .h3 {
+  margin-top: 1rem;
+}
 
 
+.achievement .some-fects .fact img {
+  width: 45px;
+  height: 45px;
+}
 
+/* *<===our sponsor section styles===>* */
+.our-sponsor{
+  border: 1px solid #000;
+}
 
 
 

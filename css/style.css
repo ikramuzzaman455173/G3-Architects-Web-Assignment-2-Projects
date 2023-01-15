@@ -655,6 +655,10 @@ img {
     padding: 2rem;
     flex-wrap: wrap;
   }
+
+  .our-team #h3 {
+    text-align: center;
+  }
 }
 
 
@@ -883,19 +887,17 @@ img {
   }
 
   .our-team .teams {
-    margin-top:2rem;
-    width:75%;
-  }
-  .our-team .teams .team-member-card{
-    width:250px;
+    margin-top: 2rem;
+    width: 75%;
   }
 
-  .our-team .h3{
-    text-align: center;
+  .our-team .teams .team-member-card {
+    width: 250px;
   }
-  .footer .p{
-    font-size:1.5rem;
+
+
+  .footer .p {
+    font-size: 1.5rem;
   }
 
 }
-
